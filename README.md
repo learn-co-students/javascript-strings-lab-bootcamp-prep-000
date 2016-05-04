@@ -14,7 +14,7 @@ Welcome to your first JavaScript lab!
 
 You'll find a file called `strings.js` in this directory. Your mission, should you choose to accept it, is to get tests to pass.
 
-Before anything, make sure that you've installed the require dependencies. Just run `npm install`. (If that doesn't work and you're not using the Learn IDE, make sure you have [Node.js and npm](https://nodejs.org/en/download/) installed
+Before anything else, make sure that you've installed the required dependencies. Just run `npm install`. (If that doesn't work and you're not using the Learn IDE, make sure you have [Node.js and npm](https://nodejs.org/en/download/) installed.)
 
 You can run the tests using the `learn` command in your terminal or the Learn IDE. Give that a go now.
 
