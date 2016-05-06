@@ -12,9 +12,7 @@ Welcome to your first JavaScript lab!
 
 ## Lab
 
-You'll find a file called `strings.js` in this directory. Your mission, should you choose to accept it, is to get tests to pass.
-
-Before anything else, make sure that you've installed the required dependencies. Just run `npm install`. (If that doesn't work and you're not using the Learn IDE, make sure you have [Node.js and npm](https://nodejs.org/en/download/) installed.)
+You'll find a file called `strings.js` in this directory. Your mission, should you choose to accept it, is to get its tests (in `tests/strings-test.js`) to pass.
 
 You can run the tests using the `learn` command in your terminal or the Learn IDE. Give that a go now.
 
@@ -25,16 +23,63 @@ All but one test has failed! This is okay, and it's expected — you haven't wri
 In `strings.js`, you'll see four lines of code:
 
 ``` javascript
-var myString = "";
+myString = "";
 
-var concatenatedString = "" + "";
+concatenatedString = "" + "";
 
-var animal = 'cat';
+animal = 'cat';
 
-var interpolatedString = `${animal}`;
+interpolatedString = `${animal}`;
 ```
 
 Each line has a test associated with it. When the tests fail, they show us what the _expected_ value is — your job is to make that expectation a reality by modifying the code provided.
+
+When you first run `learn`, you should see something like this:
+
+![test fail](https://curriculum-content.s3.amazonaws.com/skills-based-js/javascript-strings-lab/javascript-strings-lab-test.png)
+
+Let's walk through that first error together. First, we see the test title:
+
+``` bash
+1) strings defines `myString`:
+```
+
+The title tells us what the test expects our code to do. In this case, "strings" refers to the file that we've been working in, `strings.js` — it's common to refer to name files by what they contain, and makes reasoning about their names super easy.
+
+Continuing on with the test output, we can now make better sense of the next few lines:
+
+``` bash
+AssertionError: '' == 'Hello, world!'
++ expected - actual
+
++Hello, world!
+```
+
+This is a lot to take in, so we'll go through it slowly.
+
+What could `AssertionError` mean? Well, it probably means that our test _asserted_ (or expected) that something would be true, and that that thing wasn't true.
+
+What is that thing? The test expected the empty string, `''`, to be equal to (remember `==`?) the string `'Hello, world!'` — but, of course, these strings are not equal.
+
+`+ expected - actual` is a key for reading the statements below it. `+ expected` tells us that the expected output shows up in that yellowish green; `- actual` tells us what actually happened.
+
+But reading on, we only see `+Hello, world!` — what's going on? Why isn't there any `- actual` output? Well, there _was_ no actual output — it's just an empty string! That must be the problem!
+
+Next, the title tells us that `strings.js` "defines `myString`." Let's look in `strings.js` — sure enough, we see, at the top of the file, `myString = "";`. Seems like a reasonable place to start.
+
+What if, instead of assigning `""` to `myString`, we assign `"Hello, world!"`, like the test expects. Go ahead and change that line in `strings.js` so it reads
+
+``` javascript
+myString = "Hello, world!";
+```
+
+and rerun your tests. You should see
+
+![first test passes!](https://curriculum-content.s3.amazonaws.com/skills-based-js/javascript-strings-lab/javascript-strings-lab-test-pass.png)
+
+Nice! You got the first test to pass.
+
+Now use the skills that you learned above to read through the rest of the test output and fix those errors, too!
 
 **NOTE**: Because we're dealing with some low-level language features, you might spot some easy ways to "cheat" on this lab, or this lab might seem frustratingly easy. We've given you some starter code to point you in the right direction — try to solve the lab as intended! You can then compare your solution with ours (found in the `solution` branch of this repository).
 
