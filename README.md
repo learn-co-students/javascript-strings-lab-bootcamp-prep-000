@@ -1,7 +1,7 @@
 JavaScript Strings Lab
 ---
 
-Welcome to your first JavaScript lab!
+Welcome to another JavaScript lab!
 
 ![lab](http://i.giphy.com/NETCsDYm0fL44.gif)
 
