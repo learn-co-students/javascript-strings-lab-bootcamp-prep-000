@@ -10,6 +10,28 @@ Welcome to another JavaScript lab!
 1. Manipulate strings by hand in JavaScript
 2. Practice interpolating with template literals
 
+## Introduction
+
+In this lab, we're going to work with strings. Remember, strings in JavaScript are wrapped in single or double quotes, or in back ticks.
+
+When we wrap strings in single or double quotes, we can join them together using the `+` operator:
+
+``` javascript
+"Hello, " + "world!" // "Hello, world!"
+```
+
+This is called _concatenation_.
+
+Similarly, when we wrap strings in back ticks, we can use placeholders (`${}`) and insert variables or evaluated JavaScript directly:
+
+``` javascript
+var thing = 'world'
+
+`Hello, ${thing}! High ${3 + 2}!` // "Hello, world! High 5!"
+```
+
+This is called _interpolation_.
+
 ## Lab
 
 You'll find a file called `strings.js` in this directory. Your mission, should you choose to accept it, is to get its tests (in `tests/strings-test.js`) to pass.
@@ -18,18 +40,18 @@ You can run the tests using the `learn` command in your terminal or the Learn ID
 
 ![waiting](http://i.giphy.com/9c830567WqLCw.gif)
 
-All but one test has failed! This is okay, and it's expected — you haven't written any code yet, after all.
+All three tests have failed! This is okay, and it's expected — you haven't written any code yet, after all.
 
 In `strings.js`, you'll see four lines of code:
 
 ``` javascript
-myString = "";
+var myString = "";
 
-concatenatedString = "" + "";
+var concatenatedString = "" + "";
 
-animal = 'cat';
+var animal = 'cat';
 
-interpolatedString = `${animal}`;
+var interpolatedString = `${animal}`;
 ```
 
 Each line has a test associated with it. When the tests fail, they show us what the _expected_ value is — your job is to make that expectation a reality by modifying the code provided.
