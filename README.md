@@ -80,13 +80,15 @@ All three tests have failed! This is okay, and it's expected — you haven't wri
 In `strings.js`, you'll see four lines of code:
 
 ``` javascript
-var myString = "";
+var greeting = "!";
 
-var concatenatedString = "" + "";
+var specialGuest = "Neil deGrasse Tyson"
 
-var animal = 'cat';
+var greetSpecialGuest = "" + specialGuest + "!";
 
-var interpolatedString = `${animal}`;
+var topic = "space";
+
+var conversation = `${topic}`;
 ```
 
 Each line has a test associated with it. When the tests fail, they show us what the _expected_ value is — your job is to make that expectation a reality by modifying the code provided.
@@ -98,7 +100,7 @@ When you first run `learn`, you should see something like this:
 Let's walk through that first error together. First, we see the test title:
 
 ``` bash
-1) strings defines `myString`:
+1) strings defines `greeting`:
 ```
 
 The title tells us what the test expects our code to do. In this case, "strings" refers to the file that we've been working in, `strings.js` — it's common to refer to name files by what they contain, and makes reasoning about their names super easy.
@@ -106,28 +108,28 @@ The title tells us what the test expects our code to do. In this case, "strings"
 Continuing on with the test output, we can now make better sense of the next few lines:
 
 ``` bash
-AssertionError: '' == 'Hello, world!'
+AssertionError: '' == 'Hello, everybody!'
 + expected - actual
 
-+Hello, world!
++Hello, everybody!
 ```
 
 This is a lot to take in, so we'll go through it slowly.
 
 What could `AssertionError` mean? Well, it probably means that our test _asserted_ (or expected) that something would be true, and that that thing wasn't true.
 
-What is that thing? The test expected the empty string, `''`, to be equal to (remember `==`?) the string `'Hello, world!'` — but, of course, these strings are not equal.
+What is that thing? The test expected the empty string, `''`, to be equal to (remember `==`?) the string `'Hello, everybody!'` — but, of course, these strings are not equal.
 
 `+ expected - actual` is a key for reading the statements below it. `+ expected` tells us that the expected output shows up in that yellowish green; `- actual` tells us what actually happened.
 
-But reading on, we only see `+Hello, world!` — what's going on? Why isn't there any `- actual` output? Well, there _was_ no actual output — it's just an empty string! That must be the problem!
+But reading on, we only see `+Hello, everybody!` — what's going on? Why isn't there any `- actual` output? Well, there _was_ no actual output — it's just an empty string! That must be the problem!
 
 Next, the title tells us that `strings.js` "defines `myString`." Let's look in `strings.js` — sure enough, we see, at the top of the file, `myString = "";`. Seems like a reasonable place to start.
 
-What if, instead of assigning `""` to `myString`, we assign `"Hello, world!"`, like the test expects. Go ahead and change that line in `strings.js` so it reads
+What if, instead of assigning `""` to `greeting`, we assign `"Hello, world!"`, like the test expects. Go ahead and change that line in `strings.js` so it reads
 
 ``` javascript
-myString = "Hello, world!";
+var greeting = "Hello, world!";
 ```
 
 and rerun your tests. You should see

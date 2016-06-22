@@ -2,12 +2,12 @@
   "stats": {
     "suites": 1,
     "tests": 3,
-    "passes": 3,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2016-06-22T18:02:54.382Z",
-    "end": "2016-06-22T18:02:55.793Z",
-    "duration": 1411
+    "failures": 3,
+    "start": "2016-06-22T18:10:14.461Z",
+    "end": "2016-06-22T18:10:15.236Z",
+    "duration": 775
   },
   "tests": [
     {
@@ -15,46 +15,94 @@
       "fullTitle": "strings defines `greeting`",
       "duration": 1,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "name": "AssertionError",
+        "actual": "!",
+        "expected": "Hello, everybody!",
+        "operator": "==",
+        "message": "'!' == 'Hello, everybody!'",
+        "generatedMessage": true,
+        "stack": "AssertionError: '!' == 'Hello, everybody!'\n    at Context.it (test/strings-test.js:14:12)"
+      }
     },
     {
       "title": "concatenates strings to greet a special guest in `greetSpecialGuest`",
       "fullTitle": "strings concatenates strings to greet a special guest in `greetSpecialGuest`",
       "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "name": "AssertionError",
+        "actual": "Neil deGrasse Tyson!",
+        "expected": "Hello, Neil deGrasse Tyson!",
+        "operator": "==",
+        "message": "'Neil deGrasse Tyson!' == 'Hello, Neil deGrasse Tyson!'",
+        "generatedMessage": true,
+        "stack": "AssertionError: 'Neil deGrasse Tyson!' == 'Hello, Neil deGrasse Tyson!'\n    at Context.it (test/strings-test.js:18:12)"
+      }
     },
     {
       "title": "interpolates a string in `conversation`",
       "fullTitle": "strings interpolates a string in `conversation`",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "name": "AssertionError",
+        "actual": "space",
+        "expected": "Let's talk about space.",
+        "operator": "==",
+        "message": "'space' == 'Let\\'s talk about space.'",
+        "generatedMessage": true,
+        "stack": "AssertionError: 'space' == 'Let\\'s talk about space.'\n    at Context.it (test/strings-test.js:22:12)"
+      }
     }
   ],
   "pending": [],
-  "failures": [],
-  "passes": [
+  "failures": [
     {
       "title": "defines `greeting`",
       "fullTitle": "strings defines `greeting`",
       "duration": 1,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "name": "AssertionError",
+        "actual": "!",
+        "expected": "Hello, everybody!",
+        "operator": "==",
+        "message": "'!' == 'Hello, everybody!'",
+        "generatedMessage": true,
+        "stack": "AssertionError: '!' == 'Hello, everybody!'\n    at Context.it (test/strings-test.js:14:12)"
+      }
     },
     {
       "title": "concatenates strings to greet a special guest in `greetSpecialGuest`",
       "fullTitle": "strings concatenates strings to greet a special guest in `greetSpecialGuest`",
       "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "name": "AssertionError",
+        "actual": "Neil deGrasse Tyson!",
+        "expected": "Hello, Neil deGrasse Tyson!",
+        "operator": "==",
+        "message": "'Neil deGrasse Tyson!' == 'Hello, Neil deGrasse Tyson!'",
+        "generatedMessage": true,
+        "stack": "AssertionError: 'Neil deGrasse Tyson!' == 'Hello, Neil deGrasse Tyson!'\n    at Context.it (test/strings-test.js:18:12)"
+      }
     },
     {
       "title": "interpolates a string in `conversation`",
       "fullTitle": "strings interpolates a string in `conversation`",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "name": "AssertionError",
+        "actual": "space",
+        "expected": "Let's talk about space.",
+        "operator": "==",
+        "message": "'space' == 'Let\\'s talk about space.'",
+        "generatedMessage": true,
+        "stack": "AssertionError: 'space' == 'Let\\'s talk about space.'\n    at Context.it (test/strings-test.js:22:12)"
+      }
     }
-  ]
+  ],
+  "passes": []
 }
