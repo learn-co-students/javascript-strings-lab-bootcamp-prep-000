@@ -10,15 +10,15 @@ describe('strings', () => {
     src: fs.readFileSync(path.resolve(__dirname, '..', 'strings.js'), 'utf-8')
   })
 
-  it('defines `myString`', () => {
-    assert.equal(myString, "Hello, world!")
+  it('defines `greeting`', () => {
+    assert.equal(greeting, "Hello, everybody!")
   })
 
-  it('concatenates two strings', () => {
-    assert.equal(concatenatedString, "A whole is the sum of its parts.")
+  it('concatenates strings to greet a special guest in `greetSpecialGuest`', () => {
+    assert.equal(greetSpecialGuest, "Hello, " + specialGuest + "!")
   })
 
-  it('interpolates a string', () => {
-    assert.equal(interpolatedString, `I would really like a ${animal}.`)
+  it('interpolates a string in `conversation`', () => {
+    assert.equal(conversation, `Let's talk about ${topic}.`)
   })
 })

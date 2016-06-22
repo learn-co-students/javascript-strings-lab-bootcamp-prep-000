@@ -1,7 +1,9 @@
-var myString = "";
+var greeting = "!";
 
-var concatenatedString = "A whole is the sum" + "";
+var specialGuest = "Neil deGrasse Tyson"
 
-var animal = 'cat';
+var greetSpecialGuest = "" + specialGuest + "!";
 
-var interpolatedString = `${animal}`;
+var topic = "space";
+
+var conversation = `${topic}`;

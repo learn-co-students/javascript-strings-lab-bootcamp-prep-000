@@ -7,27 +7,62 @@ Welcome to another JavaScript lab!
 
 ## Objectives
 
+In this lab, we're going to work with strings. Remember, strings in JavaScript are wrapped in single or double quotes, or in back ticks.
+
+By the end of this lab, you'll
+
 1. Manipulate strings by hand in JavaScript
 2. Practice interpolating with template literals
 
 ## Introduction
 
-In this lab, we're going to work with strings. Remember, strings in JavaScript are wrapped in single or double quotes, or in back ticks.
+Imagine we're planning a birthday party for Bill Nye. There are going to be a lot of people there, so we're going to use JavaScript to help us keep everything straight.
 
-When we wrap strings in single or double quotes, we can join them together using the `+` operator:
+First, we need to practice greeting everyone. (I don't know about you, but I sometimes get nervous and say the dumbest things — but we don't want to embarrass ourselves in front of Bill Nye!)
+
+One might think that we could just type
 
 ``` javascript
-"Hello, " + "world!" // "Hello, world!"
+Hello, everybody!
 ```
 
-This is called _concatenation_.
+in our browser's console and be done with it. Give it a try.
 
-Similarly, when we wrap strings in back ticks, we can use placeholders (`${}`) and insert variables or evaluated JavaScript directly:
+You should see something like
+
+``` shell
+Uncaught ReferenceError: Hello is not defined(…)
+```
+
+Well, that won't work. (This is why we practice!) In order to greet our guests, we need to tell JavaScript that we're using a **string**. A string is a collection of characters (letters, numbers, and symbols) wrapped in single or double quotes (or, as we'll see, in back ticks). So to greet everyone, we can write,
 
 ``` javascript
-var thing = 'world'
+'Hello, everybody!'
+```
 
-`Hello, ${thing}! High ${3 + 2}!` // "Hello, world! High 5!"
+or
+
+``` javascript
+"Hello, everybody!"
+```
+
+They're the same in this case.
+
+What if we want to say hi to a special guest, like Neil deGrasse Tyson? When we wrap strings in single or double quotes, we can join them together using the `+` operator:
+
+``` javascript
+var specialGuest = "Neil deGrasse Tyson"
+"Hello, " + specialGuest + "!" // "Hello, Neil deGrasse Tyson!"
+```
+
+This is called _concatenation_. Notice that `specialGuest` is _also_ a string!
+
+When we wrap strings in back ticks, we can use placeholders (`${}`) and insert variables or evaluated JavaScript directly:
+
+``` javascript
+var specialGuest = "Neal deGrasse Tyson"
+
+`Hello, ${specialGuest}! High ${3 + 2}!` // "Hello, Neil deGrasse Tyson! High 5!"
 ```
 
 This is called _interpolation_.

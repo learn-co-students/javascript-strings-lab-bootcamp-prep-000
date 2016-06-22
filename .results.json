@@ -1,0 +1,60 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2016-06-22T18:02:54.382Z",
+    "end": "2016-06-22T18:02:55.793Z",
+    "duration": 1411
+  },
+  "tests": [
+    {
+      "title": "defines `greeting`",
+      "fullTitle": "strings defines `greeting`",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "concatenates strings to greet a special guest in `greetSpecialGuest`",
+      "fullTitle": "strings concatenates strings to greet a special guest in `greetSpecialGuest`",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "interpolates a string in `conversation`",
+      "fullTitle": "strings interpolates a string in `conversation`",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "defines `greeting`",
+      "fullTitle": "strings defines `greeting`",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "concatenates strings to greet a special guest in `greetSpecialGuest`",
+      "fullTitle": "strings concatenates strings to greet a special guest in `greetSpecialGuest`",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "interpolates a string in `conversation`",
+      "fullTitle": "strings interpolates a string in `conversation`",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
