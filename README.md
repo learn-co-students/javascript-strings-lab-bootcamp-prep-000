@@ -1,14 +1,71 @@
 JavaScript Strings Lab
 ---
 
-Welcome to your first JavaScript lab!
+Welcome to another JavaScript lab!
 
 ![lab](http://i.giphy.com/NETCsDYm0fL44.gif)
 
 ## Objectives
 
+In this lab, we're going to work with strings. Remember, strings in JavaScript are wrapped in single or double quotes, or in back ticks.
+
+By the end of this lab, you'll
+
 1. Manipulate strings by hand in JavaScript
 2. Practice interpolating with template literals
+
+## Introduction
+
+Imagine we're planning a birthday party for Bill Nye. There are going to be a lot of people there, so we're going to use JavaScript to help us keep everything straight.
+
+First, we need to practice greeting everyone. (I don't know about you, but I sometimes get nervous and say the dumbest things — but we don't want to embarrass ourselves in front of Bill Nye!)
+
+One might think that we could just type
+
+``` javascript
+Hello, everybody!
+```
+
+in our browser's console and be done with it. Give it a try.
+
+You should see something like
+
+``` shell
+Uncaught ReferenceError: Hello is not defined(…)
+```
+
+Well, that won't work. (This is why we practice!) In order to greet our guests, we need to tell JavaScript that we're using a **string**. A string is a collection of characters (letters, numbers, and symbols) wrapped in single or double quotes (or, as we'll see, in back ticks). So to greet everyone, we can write,
+
+``` javascript
+'Hello, everybody!'
+```
+
+or
+
+``` javascript
+"Hello, everybody!"
+```
+
+They're the same in this case.
+
+What if we want to say hi to a special guest, like Neil deGrasse Tyson? When we wrap strings in single or double quotes, we can join them together using the `+` operator:
+
+``` javascript
+var specialGuest = "Neil deGrasse Tyson"
+"Hello, " + specialGuest + "!" // "Hello, Neil deGrasse Tyson!"
+```
+
+This is called _concatenation_. Notice that `specialGuest` is _also_ a string!
+
+When we wrap strings in back ticks, we can use placeholders (`${}`) and insert variables or evaluated JavaScript directly:
+
+``` javascript
+var specialGuest = "Neal deGrasse Tyson"
+
+`Hello, ${specialGuest}! High ${3 + 2}!` // "Hello, Neil deGrasse Tyson! High 5!"
+```
+
+This is called _interpolation_.
 
 ## Lab
 
@@ -18,18 +75,18 @@ You can run the tests using the `learn` command in your terminal or the Learn ID
 
 ![waiting](http://i.giphy.com/9c830567WqLCw.gif)
 
-All but one test has failed! This is okay, and it's expected — you haven't written any code yet, after all.
+All three tests have failed! This is okay, and it's expected — you haven't written any code yet, after all.
 
 In `strings.js`, you'll see four lines of code:
 
 ``` javascript
-myString = "";
+var myString = "";
 
-concatenatedString = "" + "";
+var concatenatedString = "" + "";
 
-animal = 'cat';
+var animal = 'cat';
 
-interpolatedString = `${animal}`;
+var interpolatedString = `${animal}`;
 ```
 
 Each line has a test associated with it. When the tests fail, they show us what the _expected_ value is — your job is to make that expectation a reality by modifying the code provided.
