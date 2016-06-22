@@ -9,3 +9,5 @@ tmp
 *.iml
 *.log
 *.swp
+
+.results.json
