@@ -126,10 +126,10 @@ But reading on, we only see `+Hello, everybody!` — what's going on? Why isn't 
 
 Next, the title tells us that `strings.js` "defines `myString`." Let's look in `strings.js` — sure enough, we see, at the top of the file, `myString = "";`. Seems like a reasonable place to start.
 
-What if, instead of assigning `""` to `greeting`, we assign `"Hello, world!"`, like the test expects. Go ahead and change that line in `strings.js` so it reads
+What if, instead of assigning `""` to `greeting`, we assign `"Hello, everybody!"`, like the test expects. Go ahead and change that line in `strings.js` so it reads
 
 ``` javascript
-var greeting = "Hello, world!";
+var greeting = "Hello, everybody!";
 ```
 
 and rerun your tests. You should see
@@ -145,3 +145,5 @@ Now use the skills that you learned above to read through the rest of the test o
 When your tests are passing, submit your answer with `learn submit` or else create a pull request (use Learn submit if "pull request" sounds a bit terrifying).
 
 Good luck!
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/javascript-strings-lab'>JavaScript Strings Lab</a> on Learn.co and start learning to code for free.</p>
