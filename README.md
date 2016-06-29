@@ -118,7 +118,7 @@ This is a lot to take in, so we'll go through it slowly.
 
 What could `AssertionError` mean? Well, it probably means that our test _asserted_ (or expected) that something would be true, and that that thing wasn't true.
 
-What is that thing? The test expected the empty string, `''`, to be equal to (remember `==`?) the string `'Hello, everybody!'` — but, of course, these strings are not equal.
+What is that thing? The test expected the empty string, `''`, to be equal to the string `'Hello, everybody!'` — but, of course, these strings are not equal.
 
 `+ expected - actual` is a key for reading the statements below it. `+ expected` tells us that the expected output shows up in that yellowish green; `- actual` tells us what actually happened.
 
