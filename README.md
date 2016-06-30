@@ -57,6 +57,12 @@ var specialGuest = "Neil deGrasse Tyson"
 
 This is called _concatenation_. Notice that `specialGuest` is _also_ a string!
 
+**TOP TIP**: Your console might be getting a little full at this point. If at any point you'd like to clear it out and start fresh, you can either click the button in the top left corner of the console — in Chrome, it looks like this:
+
+![clear console](https://curriculum-content.s3.amazonaws.com/skills-based-js/clear_console.png)
+
+Alternatively, you can press `ctrl + L` or `command + K`. As long as you don't refresh the page, anything you've declared will stick around for you to reference — you'll just get a nice blank slate on which to code.
+
 When we wrap strings in back ticks, we can use placeholders (`${}`) and insert variables or evaluated JavaScript directly:
 
 ``` javascript
