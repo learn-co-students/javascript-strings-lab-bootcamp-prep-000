@@ -130,7 +130,7 @@ What is that thing? The test expected the empty string, `''`, to be equal to the
 
 But reading on, we only see `+Hello, everybody!` — what's going on? Why isn't there any `- actual` output? Well, there _was_ no actual output — it's just an empty string! That must be the problem!
 
-Next, the title tells us that `strings.js` "defines `myString`." Let's look in `strings.js` — sure enough, we see, at the top of the file, `myString = "";`. Seems like a reasonable place to start.
+Next, the title tells us that `strings.js` "defines `greeting`." Let's look in `strings.js` — sure enough, we see, at the top of the file, `var greeting = "";`. Seems like a reasonable place to start.
 
 What if, instead of assigning `""` to `greeting`, we assign `"Hello, everybody!"`, like the test expects. Go ahead and change that line in `strings.js` so it reads
 
