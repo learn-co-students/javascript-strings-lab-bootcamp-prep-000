@@ -1,5 +1,4 @@
-JavaScript Strings Lab
----
+# JavaScript Strings Lab
 
 Welcome to another JavaScript lab!
 
@@ -9,7 +8,7 @@ Welcome to another JavaScript lab!
 
 In this lab, we're going to work with strings. Remember, strings in JavaScript are wrapped in single or double quotes, or in back ticks.
 
-By the end of this lab, you'll
+By the end of this lab, you'll have learned how to do the following:
 
 1. Manipulate strings by hand in JavaScript
 2. Practice interpolating with template literals
