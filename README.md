@@ -1,5 +1,4 @@
-JavaScript Strings Lab
----
+# JavaScript Strings Lab
 
 Welcome to another JavaScript lab!
 
@@ -9,7 +8,7 @@ Welcome to another JavaScript lab!
 
 In this lab, we're going to work with strings. Remember, strings in JavaScript are wrapped in single or double quotes, or in back ticks.
 
-By the end of this lab, you'll
+By the end of this lab, you'll have learned how to do the following:
 
 1. Manipulate strings by hand in JavaScript
 2. Practice interpolating with template literals
@@ -57,10 +56,16 @@ var specialGuest = "Neil deGrasse Tyson"
 
 This is called _concatenation_. Notice that `specialGuest` is _also_ a string!
 
+**TOP TIP**: Your console might be getting a little full at this point. If at any point you'd like to clear it out and start fresh, you can either click the button in the top left corner of the console — in Chrome, it looks like this:
+
+![clear console](https://curriculum-content.s3.amazonaws.com/skills-based-js/clear_console.png)
+
+Alternatively, you can press `ctrl + L` or `command + K`. As long as you don't refresh the page, anything you've declared will stick around for you to reference — you'll just get a nice blank slate on which to code.
+
 When we wrap strings in back ticks, we can use placeholders (`${}`) and insert variables or evaluated JavaScript directly:
 
 ``` javascript
-var specialGuest = "Neal deGrasse Tyson"
+var specialGuest = "Neil deGrasse Tyson"
 
 `Hello, ${specialGuest}! High ${3 + 2}!` // "Hello, Neil deGrasse Tyson! High 5!"
 ```
@@ -118,18 +123,18 @@ This is a lot to take in, so we'll go through it slowly.
 
 What could `AssertionError` mean? Well, it probably means that our test _asserted_ (or expected) that something would be true, and that that thing wasn't true.
 
-What is that thing? The test expected the empty string, `''`, to be equal to (remember `==`?) the string `'Hello, everybody!'` — but, of course, these strings are not equal.
+What is that thing? The test expected the empty string, `''`, to be equal to the string `'Hello, everybody!'` — but, of course, these strings are not equal.
 
 `+ expected - actual` is a key for reading the statements below it. `+ expected` tells us that the expected output shows up in that yellowish green; `- actual` tells us what actually happened.
 
 But reading on, we only see `+Hello, everybody!` — what's going on? Why isn't there any `- actual` output? Well, there _was_ no actual output — it's just an empty string! That must be the problem!
 
-Next, the title tells us that `strings.js` "defines `myString`." Let's look in `strings.js` — sure enough, we see, at the top of the file, `myString = "";`. Seems like a reasonable place to start.
+Next, the title tells us that `strings.js` "defines `greeting`." Let's look in `strings.js` — sure enough, we see, at the top of the file, `var greeting = "";`. Seems like a reasonable place to start.
 
-What if, instead of assigning `""` to `greeting`, we assign `"Hello, world!"`, like the test expects. Go ahead and change that line in `strings.js` so it reads
+What if, instead of assigning `""` to `greeting`, we assign `"Hello, everybody!"`, like the test expects. Go ahead and change that line in `strings.js` so it reads
 
 ``` javascript
-var greeting = "Hello, world!";
+var greeting = "Hello, everybody!";
 ```
 
 and rerun your tests. You should see
@@ -145,3 +150,5 @@ Now use the skills that you learned above to read through the rest of the test o
 When your tests are passing, submit your answer with `learn submit` or else create a pull request (use Learn submit if "pull request" sounds a bit terrifying).
 
 Good luck!
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/javascript-strings-lab'>JavaScript Strings Lab</a> on Learn.co and start learning to code for free.</p>
