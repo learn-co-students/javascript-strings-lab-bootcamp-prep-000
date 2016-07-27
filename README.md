@@ -1,12 +1,12 @@
 # JavaScript Strings Lab
 
-Welcome to another JavaScript lab!
+Welcome to a JavaScript lab!
 
 ![lab](http://i.giphy.com/NETCsDYm0fL44.gif)
 
 ## Objectives
 
-In this lab, we're going to work with strings. Remember, strings in JavaScript are wrapped in single or double quotes, or in back ticks.
+In this lab, we're going to work with strings. Strings in JavaScript are wrapped in single or double quotes, or in back ticks.
 
 By the end of this lab, you'll have learned how to do the following:
 
@@ -25,7 +25,7 @@ One might think that we could just type
 Hello, everybody!
 ```
 
-in our browser's console and be done with it. Give it a try.
+in our browser's console and be done with it. Give it a try. (If you're on a Mac, that would be `Command` + `Option` + `J` together.) 
 
 You should see something like
 
@@ -137,17 +137,17 @@ What if, instead of assigning `""` to `greeting`, we assign `"Hello, everybody!"
 var greeting = "Hello, everybody!";
 ```
 
-and rerun your tests. You should see
+save the file, and rerun your tests. You should see
 
 ![first test passes!](https://curriculum-content.s3.amazonaws.com/skills-based-js/javascript-strings-lab/javascript-strings-lab-test-pass.png)
 
 Nice! You got the first test to pass.
 
-Now use the skills that you learned above to read through the rest of the test output and fix those errors, too!
+Now use the skills that you learned above to read through the rest of the test output and fix those errors, too! Always remember to save your file before re-running your tests. 
 
 **NOTE**: Because we're dealing with some low-level language features, you might spot some easy ways to "cheat" on this lab, or this lab might seem frustratingly easy. We've given you some starter code to point you in the right direction — try to solve the lab as intended! You can then compare your solution with ours (found in the `solution` branch of this repository).
 
-When your tests are passing, submit your answer with `learn submit` or else create a pull request (use Learn submit if "pull request" sounds a bit terrifying).
+When your tests are passing, submit your answer by typing in `learn submit` in the command line or else create a pull request (use Learn submit if "pull request" sounds a bit terrifying).
 
 Good luck!
 
