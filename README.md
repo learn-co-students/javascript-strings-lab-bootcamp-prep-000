@@ -25,7 +25,7 @@ One might think that we could just type
 Hello, everybody!
 ```
 
-in our browser's console and be done with it. Give it a try. (If you're on a Mac, that would be `Command` + `Option` + `J` together.) 
+in our browser's console and be done with it. Give it a try. (If you're on a Mac, that would be `Command` + `Option` + `J` together.)
 
 You should see something like
 
@@ -74,7 +74,7 @@ This is called _interpolation_.
 
 ## Lab
 
-You'll find a file called `strings.js` in this directory. Your mission, should you choose to accept it, is to get its tests (in `tests/strings-test.js`) to pass.
+You'll find a file called `index.js` in this directory. Your mission, should you choose to accept it, is to get its tests (in `tests/index-test.js`) to pass.
 
 You can run the tests using the `learn` command in your terminal or the Learn IDE. Give that a go now.
 
@@ -82,7 +82,7 @@ You can run the tests using the `learn` command in your terminal or the Learn ID
 
 All three tests have failed! This is okay, and it's expected — you haven't written any code yet, after all.
 
-In `strings.js`, you'll see four lines of code:
+In `index.js`, you'll see four lines of code:
 
 ``` javascript
 var greeting = "!";
@@ -108,7 +108,9 @@ Let's walk through that first error together. First, we see the test title:
 1) strings defines `greeting`:
 ```
 
-The title tells us what the test expects our code to do. In this case, "strings" refers to the file that we've been working in, `strings.js` — it's common to refer to name files by what they contain, and makes reasoning about their names super easy.
+The title tells us what the test expects our code to do. In this case,
+"strings" refers to the general problem space in which we're working —
+we're handling strings.
 
 Continuing on with the test output, we can now make better sense of the next few lines:
 
@@ -129,9 +131,9 @@ What is that thing? The test expected the empty string, `''`, to be equal to the
 
 But reading on, we only see `+Hello, everybody!` — what's going on? Why isn't there any `- actual` output? Well, there _was_ no actual output — it's just an empty string! That must be the problem!
 
-Next, the title tells us that `strings.js` "defines `greeting`." Let's look in `strings.js` — sure enough, we see, at the top of the file, `var greeting = "";`. Seems like a reasonable place to start.
+Next, the title tells us that `index.js` "defines `greeting`." Let's look in `index.js` — sure enough, we see, at the top of the file, `var greeting = "";`. Seems like a reasonable place to start.
 
-What if, instead of assigning `""` to `greeting`, we assign `"Hello, everybody!"`, like the test expects. Go ahead and change that line in `strings.js` so it reads
+What if, instead of assigning `""` to `greeting`, we assign `"Hello, everybody!"`, like the test expects. Go ahead and change that line in `index.js` so it reads
 
 ``` javascript
 var greeting = "Hello, everybody!";
@@ -143,7 +145,7 @@ save the file, and rerun your tests. You should see
 
 Nice! You got the first test to pass.
 
-Now use the skills that you learned above to read through the rest of the test output and fix those errors, too! Always remember to save your file before re-running your tests. 
+Now use the skills that you learned above to read through the rest of the test output and fix those errors, too! Always remember to save your file before re-running your tests.
 
 **NOTE**: Because we're dealing with some low-level language features, you might spot some easy ways to "cheat" on this lab, or this lab might seem frustratingly easy. We've given you some starter code to point you in the right direction — try to solve the lab as intended! You can then compare your solution with ours (found in the `solution` branch of this repository).
 
