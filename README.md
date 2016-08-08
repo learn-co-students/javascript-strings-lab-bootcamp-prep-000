@@ -82,7 +82,7 @@ You can run the tests using the `learn` command in your terminal or the Learn ID
 
 All three tests have failed! This is okay, and it's expected — you haven't written any code yet, after all.
 
-In `index.js`, you'll see four lines of code:
+In `index.js`, you'll see five lines of code:
 
 ``` javascript
 var greeting = "!";
