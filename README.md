@@ -1,14 +1,13 @@
 # JavaScript Strings Lab
 
-Welcome to a JavaScript lab!
-
 ![lab](http://i.giphy.com/NETCsDYm0fL44.gif)
 
-## Objectives
+## Overview 
 
 In this lab, we're going to work with strings. Strings in JavaScript are wrapped in single or double quotes, or in back ticks.
 
-By the end of this lab, you'll have learned how to do the following:
+## Objectives
+
 
 1. Manipulate strings by hand in JavaScript
 2. Practice interpolating with template literals
