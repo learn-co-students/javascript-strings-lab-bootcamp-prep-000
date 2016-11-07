@@ -1,3 +1,7 @@
+var greeting = "Hello, everybody!"
+var greetSpecialGuest = "Hello, Neil deGrasse Tyson!"
+var topic = "space"
+var conversation = `Let\'s talk about ${topic}.`
 /*global concatenatedString, describe, interpolatedString, it, myString */
 
 it('defines `greeting`', function() {
