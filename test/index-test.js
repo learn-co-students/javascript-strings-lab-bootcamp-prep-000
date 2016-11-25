@@ -1,7 +1,7 @@
 /*global concatenatedString, describe, interpolatedString, it, myString */
 
 it('defines `greeting`', function() {
-  expect(greeting).toEqual("Hello, everybody!")
+  expect(greeting).toEqual("Hello, Everybody!")
 })
 
 it('concatenates strings to greet a special guest in `greetSpecialGuest`', function() {
