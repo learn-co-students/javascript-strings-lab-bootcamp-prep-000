@@ -1,4 +1,4 @@
-var greeting = "";
+var greeting = "Lets talk about space";
 
 var specialGuest = "Neil deGrasse Tyson"
 
