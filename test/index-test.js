@@ -1,6 +1,11 @@
 /*global concatenatedString, describe, interpolatedString, it, myString */
 
-it('defines `greeting`', function() {
+it('strings defines `greeting`', function() {
+  AssertionError: '' == 'Hello, everybody!'
++ expected - actual
++Hello, everybody!
+
+var greeting = "Hello, everybody!";
   expect(greeting).toEqual("Hello, everybody!")
 })
 
