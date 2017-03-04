@@ -4,7 +4,7 @@
   "description": "JavaScript Strings Lab for Learn.co",
   "main": "strings.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha -R mocha-multi --reporter-options nyan=-,json=.results.json"
+    "test": "node_modules/.bin/mocha -R mocha-multi --reporter-options nyan=-,json=.results.json --timeout 10000"
   },
   "repository": {
     "type": "git",
