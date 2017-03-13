@@ -1,5 +1,5 @@
 # JavaScript Strings Lab
-test
+test!
 ![lab](http://i.giphy.com/NETCsDYm0fL44.gif)
 
 ## Overview
