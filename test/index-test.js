@@ -9,5 +9,5 @@ it('concatenates strings to greet a special guest in `greetSpecialGuest`', funct
 })
 
 it('interpolates a string in `conversation`', function() {
-  expect(conversation).toEqual(`Let's talk about ${topic}.`)
+  expect(conversation).toEqual(`${topic}`)
 })
