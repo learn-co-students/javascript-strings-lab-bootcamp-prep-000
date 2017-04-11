@@ -1,0 +1,97 @@
+
+> javascript-strings-lab@0.1.0 test /home/paskalm-65063/code/labs/javascript-strings-lab-bootcamp-prep-000
+> mocha -R mocha-multi --reporter-options nyan=-,json=.results.json
+
+ 0
+ 0
+ 0
+
+[4A[5C-
+[5C-
+[5C-
+[5C-
+[4A[6C_,------,
+[6C_|   /\_/\ 
+[6C^|__( - .-) 
+[6C  ""  "" 
+[4A 0
+ 1
+ 0
+
+[4A[5C-_
+[5C-_
+[5C-_
+[5C-_
+[4A[7C_,------,
+[7C_|  /\_/\ 
+[7C~|_( x .x) 
+[7C ""  "" 
+[4A 0
+ 2
+ 0
+
+[4A[5C-_-
+[5C-_-
+[5C-_-
+[5C-_-
+[4A[8C_,------,
+[8C_|   /\_/\ 
+[8C^|__( x .x) 
+[8C  ""  "" 
+[4A 0
+ 3
+ 0
+
+[4A[5C-_-_
+[5C-_-_
+[5C-_-_
+[5C-_-_
+[4A[9C_,------,
+[9C_|  /\_/\ 
+[9C~|_( x .x) 
+[9C ""  "" 
+[4A
+
+
+
+
+  0 passing (786ms)
+  3 failing
+
+  1)  defines `greeting`:
+
+      Error: Expected '' to equal 'Hello, everybody!'
+      + expected - actual
+
+      +Hello, everybody!
+      
+      at assert (node_modules/expect/lib/assert.js:29:9)
+      at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
+      at Context.<anonymous> (test/index-test.js:4:20)
+
+  2)  concatenates strings to greet a special guest in `greetSpecialGuest`:
+
+      Error: Expected 'Neil deGrasse Tyson!' to equal 'Hello, Neil deGrasse Tyson!'
+      + expected - actual
+
+      -Neil deGrasse Tyson!
+      +Hello, Neil deGrasse Tyson!
+      
+      at assert (node_modules/expect/lib/assert.js:29:9)
+      at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
+      at Context.<anonymous> (test/index-test.js:8:29)
+
+  3)  interpolates a string in `conversation`:
+
+      Error: Expected 'space' to equal 'Let\'s talk about space.'
+      + expected - actual
+
+      -space
+      +Let's talk about space.
+      
+      at assert (node_modules/expect/lib/assert.js:29:9)
+      at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
+      at Context.<anonymous> (test/index-test.js:12:24)
+
+
+
