@@ -22,7 +22,7 @@ before(function(done) {
     Object.keys(window).forEach(key => {
       global[key] = window[key];
     });
-
+   
     return done();
   });
 });
