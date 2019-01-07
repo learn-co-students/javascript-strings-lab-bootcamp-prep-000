@@ -1,9 +1,11 @@
-var greeting = "";
+var greeting = "Hello, everybody!";
 
 var specialGuest = "Neil deGrasse Tyson"
 
-var greetSpecialGuest = "" + specialGuest + "!";
+var greetSpecialGuest;
+greetSpecialGuest= "Hello, ${"+specialGuest+ "} !";
 
 var topic = "space";
 
-var conversation = `${topic}`;
+var conversation;
+conversation = "Let/'s talk about+ ${" +topic+"}";
