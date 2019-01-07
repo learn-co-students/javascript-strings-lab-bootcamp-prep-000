@@ -1,9 +1,10 @@
-var greeting = "";
-
+// assigning variable greeting to string
+var greeting = "Hello, everybody!";
+// assigning variable specialGuest to string
 var specialGuest = "Neil deGrasse Tyson"
-
-var greetSpecialGuest = "" + specialGuest + "!";
+// Concatenating strings 
+var greetSpecialGuest = "Hello, " + specialGuest + "!";
 
 var topic = "space";
-
-var conversation = `${topic}`;
+// inserting placeholder into string
+var conversation = `Let's talk about ${topic}.`;
